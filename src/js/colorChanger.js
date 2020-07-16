@@ -12,6 +12,7 @@ refs.stop.disabled = true;
 
 const scriptStart = () => {
   if (!timerId) {
+    changeColor();
     timerId = setInterval(changeColor, 1000);
     refs.start.disabled = true;
     refs.stop.disabled = false;
