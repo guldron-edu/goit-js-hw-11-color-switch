@@ -1,13 +1,12 @@
 import colors from './colors';
 
-let timerId = null;
-
 const refs = {
   start: document.querySelector('button[data-action="start"]'),
   stop: document.querySelector('button[data-action="stop"]'),
   body: document.querySelector('body'),
 };
 
+let timerId = null;
 refs.stop.disabled = true;
 
 const scriptStart = () => {
